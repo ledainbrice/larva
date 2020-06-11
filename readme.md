@@ -2,8 +2,14 @@
 
 This is a Laravel demo application.
 
-Relevant Tutorials:
+démarrer l'env de dev:
+- docker-compose up -d
 
-- [How to Install and Configure Laravel with LEMP on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-lemp-on-ubuntu-18-04)
+l'arrêter avec:
+- docker-compose down
+
+pour executer une commande dans un service:
+- docker-compose exec -ti app bash
+- docker-compose exec app artisan migrate
 
 
