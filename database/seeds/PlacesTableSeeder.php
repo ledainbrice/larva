@@ -54,7 +54,7 @@ class PlacesTableSeeder extends Seeder
             $place->save();
 
             $sample_photo = strtolower($name) . '.jpg';
-            $source_photo = (Storage::disk('local')->exists('/sample_photos/' . $sample_photo) ? $sample_photo : 'japan.jpg';
+            $source_photo = Storage::disk('local')->exists('/sample_photos/' . $sample_photo) ? $sample_photo : 'japan.jpg';
 
             //check if sample photo was copied before
             if (!Storage::disk('local')->exists('/public/' . $sample_photo)) {

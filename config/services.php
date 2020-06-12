@@ -44,4 +44,9 @@ return [
         ],
     ],
 
+    'search' => [
+        'enabled' => env('ELASTICSEARCH_ENABLED', false),
+        'hosts' => explode(',', 'elasticsearch:9200'),
+    ],
+
 ];

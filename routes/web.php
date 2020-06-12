@@ -18,3 +18,5 @@ Route::get('/', 'MainController@main')->name('Main');
 Route::get('/upload', 'PhotoController@uploadForm')->name('Upload.form');
 
 Route::post('/upload', 'PhotoController@uploadPhoto')->name('Upload');
+
+Route::get('search/', 'SearchController@index');
